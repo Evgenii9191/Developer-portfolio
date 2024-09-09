@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: clamp(940.6px, 294vw, 3630px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: clamp(320px, 100vw, 1235px);
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    width: clamp(309px, 96.6vw, 1193px);
+    height: clamp(16px, 3.69vw, 59px);
+    top: clamp(9px, 2.18vw, 33px);
+    display: flex;
+    font-family: "DM Sans", sans-serif;
+}
+
+.logo {
+    position: relative;
+    width: 8.13%;
+    height: 113%;
+    left: -0.31%;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    position: relative;
+    width: clamp(163px, 51.048vw, 609px);
+    margin-left: clamp(75px, 24.8vw, 306px);
+    top: clamp(3px, 0.65vw, 8px);
+    font-size: clamp(5px, 1.58vw, 20px); 
+    line-height: clamp(5.12px, 1.6vw, 26px);
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+    width: 100%; 
+    justify-content: space-between; 
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    color: rgba(102, 102, 102, 1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header .social {
+    position: relative;
+    width: clamp(33.7px, 10.5vw, 130px);
+    height: clamp(8.3px, 2.5vw, 32px);
+    margin-left: auto;
+    top: clamp(1px, 0.324vw, 4px);
+}
+
+.social ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%; 
+    height: 100%;
+}
+
+.social li {
+    width: 100%;
+    height: 100%;
+}
+
+.social a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.github {
+    background-image: url('image/GitHub.svg');
+}
+
+.twitter {
+    background-image: url('image/Twitter.svg');
+}
+
+.linkedin {
+    background-image: url('image/linkedin-with-circle.svg');
+}
+
+main {
+    flex-grow: 1; 
+}
+
+.presentation {
+    position: relative;
+    top: clamp(83px, 26vw, 320px);
+    width: clamp(312px, 97.49vw, 1204px);
+    height: clamp(91px, 29vw, 350px);
+}
+
+h1 {
+    position: relative;
+    width: clamp(164.8px, 52.8%, 636px);
+    height: clamp(77.22px, 84.85%, 297px);
+    top: clamp(11.7px, 12.85%, 45px);
+}
+
+h1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.litso {
+    position: absolute; 
+    right: 0; 
+    top: clamp(4.5px, 5.423%, 19px);
+    width: clamp(90.438px, 28.986%, 349px);
+    height: clamp(90.438px, 100%, 349px);
+}
+
+.litso img {
+    margin-left: auto; 
+    width: 100%;
+    height: 100%;
+}
+
+.stacktech {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: clamp(259px, 80.81vw, 998px);
+    width: clamp(320px, 100vw, 1235px);
+    padding: 0 clamp(2.07px, 1.4vw, 8px);
+    height: clamp(146.65px, 45.83vw, 566px);
+    text-align: center;
+    align-items: center;
+    font-family: "Poppins", system-ui;
+    white-space: nowrap;
+}
+
+.stacktech b, .projects b {
+    font-size: clamp(20px, 3.5vw, 48px);
+    line-height: clamp(32px, 4.5vw, 55px);
+    font-weight: 600;
+}
+
+.stacktech h2, .projects h2 {
+    font-size: clamp(12px, 2.5vw, 32px);
+    line-height: clamp(18px, 3vw, 26px);
+    font-weight: 300;
+}
+
+.stacktech span, .projects span {
+    position: relative;
+    top: clamp(9px, 2.75vw, 34px);
+}
+
+.techs {
+    width: 100%;
+    margin-top: clamp(33px, 10.4vw, 128px);
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, auto);
+
+}
+
+.techs img {
+    width: 100%;                           
+    height: 50%;                          
+}
+
+.projects {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: "Poppins", system-ui;
+    white-space: nowrap;
+    width: clamp(317px, 100vw, 1235px);
+    height: clamp(367px, 114.7vw, 1416px);
+    top: clamp(456px, 142.3vw, 1757px);
+}
+
+.projects-cards {
+    width: 100%;
+    margin-top: clamp(22px, 6.9vw, 85px);
+    margin-left: clamp(4.16px, 1.3vw, 16px);
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3, clamp(96.65px, 30vw, 373px));
+    grid-template-rows: repeat(2, clamp(147px, 46vw, 567px));
+    gap: clamp(16px, 5vw, 62px) clamp(11.7px, 3.6vw, 45px);
+    justify-content: center; 
+}
+
+.projects-cards div {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", system-ui;
+    background-color: #FFFFFF;
+    border-radius: clamp(5.18px, 1.62vw, 20px);
+}
+
+.projects-cards h3 {
+    padding: clamp(6.5px, 2vw, 25px);
+    font-size: clamp(7.3px, 2.3vw, 28px);
+    font-weight: 550;
+}
+
+.projects-cards p {
+    position: relative;
+    bottom: clamp(4.3px, 1.4vw, 16.5px);
+    font-size: clamp(4.7px, 1.5vw, 18px);
+    margin: 0 clamp(9.3px, 2.9vw, 36px);
+    text-align: left;
+    font-weight: 300;
+}
+
+.projects-cards span {
+    position: relative;
+    color: #42446E;
+    font-size: clamp(3.6px, 1.1vw, 14px);
+    line-height: clamp(6.74px, 2.1vw, 26px);
+    margin: 0 clamp(9.3px, 2.9vw, 36px);
+    text-align: left;
+    top: clamp(-1.29px, 0.4vw, -5px);
+}
+
+.projlinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", system-ui;
+    font-size: clamp(4.15px, 1.3vw, 16px);
+    margin: 0 clamp(9.3px, 2.9vw, 36px);
+    padding-top: clamp(3.6px, 1.1vw, 14px);
+}
+
+.projlinks a {
+    display: flex;
+    align-items: center;
+    gap: clamp(2.073px, 0.65vw, 8px); 
+}
+
+.projlinks img {
+    width: clamp(5.18px, 1.62vw, 20px);
+    height: clamp(5.18px, 1.62vw, 20px);
+}
+
+footer {
+    width: clamp(317px, 100vw, 1235px);
+    height: clamp(63.5px, 19.838vw, 245px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.toppart {
+    width: clamp(317px, 100vw, 1235px);
+    height: clamp(27.5px, 8.6vw, 106px);
+    display: flex;
+    padding: 0 clamp(5.312px, 1.7vw, 20.5px) 0 clamp(4.16px, 1.3vw, 16px);
+}
+
+.toppart .logo {
+    left: 0;
+    width: clamp(25.13px, 7.85vw,  97px);
+    height: clamp(15.3px, 4.8vw, 59px);
+}
+
+.contactInfo {
+    margin-left: auto; 
+    width: clamp(154.7px, 48.34vw, 597px);
+    height: clamp(8.55px, 2.7vw, 33px);
+    margin-top: clamp(4.92px, 1.54vw, 19px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.tel, .email {
+    flex: 1;
+}
+
+.tel a, .email a {
+    text-decoration: none;
+    color: #42446E;
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(4.7px, 1.5vw, 18px);
+}
+
+footer .social{
+    position: relative;
+    width: clamp(33.7px, 10.5vw, 130px);
+    height: clamp(8.3px, 2.5vw, 32px);
+    margin-left: auto;
+    bottom: clamp(1.036px, 0.3vw, 4px);
+}
+
+.bottompart {
+    width: 97.9%;
+    height: clamp(38.35px, 12vw, 148px);
+    display: flex;
+    align-items: center;
+    border-top: solid gray 2px;
+    
+}
+
+.bottompart .menu {
+    margin-left: 0;
+    font-size: clamp(4.7px, 1.46vw, 18px); 
+    width: clamp(143.5465px, 44.85vw, 554px);
+    top: 0;
+}
+
+.sign {
+   margin-left: auto;
+   font-family: "Poppins", system-ui;
+   font-size: clamp(4.7px, 1.46vw, 18px); 
+}
+
+.gradient {
+    background: linear-gradient(90deg, #00c6ff, #800080); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+  }
